@@ -1,0 +1,21 @@
+body {
+  --heading-spacing: .5em; /* space ABOVE headings in Live Preview */
+  --p-spacing: 0.75rem;     /* space between paragraphs */
+}
+
+/* Reading view */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 { margin-bottom: 0.5em; }
+
+/* Live Preview / editing view — only top padding works reliably,
+   since each line is its own element */
+.markdown-source-view.mod-cm6 .HyperMD-header-1,
+.markdown-source-view.mod-cm6 .HyperMD-header-2,
+.markdown-source-view.mod-cm6 .HyperMD-header-3,
+.markdown-source-view.mod-cm6 .HyperMD-header-4,
+.markdown-source-view.mod-cm6 .HyperMD-header-5,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 { padding-bottom: .5em !important; }
