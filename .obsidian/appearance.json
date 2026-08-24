@@ -1,0 +1,9 @@
+{
+  "textFontFamily": "iA Writer Quattro S",
+  "baseFontSize": 12,
+  "enabledCssSnippets": [
+    "heading-spacing"
+  ],
+  "monospaceFontFamily": "CaskaydiaCove Nerd Font,Cascadia Code",
+  "interfaceFontFamily": "IBM Plex Sans"
+}
