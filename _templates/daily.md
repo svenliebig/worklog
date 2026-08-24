@@ -7,7 +7,14 @@ const prev = app.vault.getMarkdownFiles()
 let carry = "";
 if (prev) {
   const text = await app.vault.read(prev);
-  carry = text.split("\n").filter(l => /^\s*- \[ \]/.test(l)).join("\n");
+  const lines = text.split("\n");
+  const start = lines.findIndex(l => /^#\s+Today\s*$/.test(l));
+  if (start !== -1) {
+    let section = lines.slice(start + 1);
+    const end = section.findIndex(l => /^#\s/.test(l));
+    if (end !== -1) section = section.slice(0, end);
+    carry = section.filter(l => /^\s*- \[ \]/.test(l)).join("\n");
+  }
 }
 -%>
 # Everyday
@@ -16,4 +23,3 @@ if (prev) {
 - [ ] Merge open Pull Requests
 # Today
 <% carry %>
-## Notizen
