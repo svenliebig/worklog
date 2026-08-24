@@ -1,0 +1,9 @@
+# OS junk
+.DS_Store
+
+# Obsidian device-specific state (regenerated on open, differs per machine)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian trash
+.trash/
