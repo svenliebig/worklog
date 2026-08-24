@@ -43,6 +43,18 @@ open "obsidian://adv-uri?vault=my-worklog&daily=true"
 
 Full walkthrough: [docs/raycast-daily-note.md](docs/raycast-daily-note.md).
 
+### Append to today's note from anywhere
+
+Advanced URI can also write: one Raycast command adds a task — optionally as
+a markdown link — to the *Today* section of the current daily note, creating
+the note from the template first if needed. The vault ships the script
+command at `.obsidian/scripts/add-to-worklog.sh`; point Raycast's *Script
+Commands* extension at that folder. The same script works from the plain
+CLI too.
+
+Full walkthrough: [docs/raycast-append-worklog.md](docs/raycast-append-worklog.md),
+CLI usage and `PATH` setup: [docs/cli-append-worklog.md](docs/cli-append-worklog.md).
+
 ### Nicer fonts
 
 Fonts that work well for this vault:
