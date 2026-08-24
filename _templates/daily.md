@@ -17,7 +17,6 @@ if (prev) {
   }
 }
 -%>
-
 # Everyday
 
 - [ ] Check Mails
