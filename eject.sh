@@ -3,9 +3,9 @@ set -euo pipefail
 
 # Turns this template into your personal vault:
 #   - removes the template's git history
+#   - removes the template docs and this script
 #   - optionally renames the vault folder (in Obsidian, the folder name IS the
 #     vault name — there is no separate setting)
-#   - removes this script
 #
 # Usage: ./eject.sh [vault-name]
 
@@ -22,6 +22,7 @@ read -r -p "Eject '$(basename "$VAULT_DIR")' (removes git history)? [y/N] " answ
 [[ "$answer" == [yY]* ]] || exit 1
 
 rm -rf "$VAULT_DIR/.git"
+rm -rf "$VAULT_DIR/docs"
 rm -f "$VAULT_DIR/eject.sh"
 
 if [[ -n "$NEW_NAME" ]]; then
