@@ -17,9 +17,13 @@ if (prev) {
   }
 }
 -%>
+
 # Everyday
+
 - [ ] Check Mails
 - [ ] Review open Pull Requests
 - [ ] Merge open Pull Requests
+
 # Today
+
 <% carry %>

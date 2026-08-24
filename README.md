@@ -31,11 +31,8 @@ new day's *Übertrag* section.
 
 Daily-notes folder, template wiring and the Templater trigger are all part of
 the committed vault config — there is nothing else to configure.
-
 ## Optional setup / improvements
-
 ### Open today's note from anywhere
-
 With the *Advanced URI* community plugin, today's note is reachable via
 deeplink — from a Raycast quicklink with a global hotkey, a macOS Shortcut,
 or a shell alias:
@@ -67,10 +64,10 @@ pick the font under *Settings → Appearance → Font*.
 
 ## Structure
 
-| Path                 | Purpose                                            |
-| -------------------- | -------------------------------------------------- |
-| `logs/`              | one note per day (`YYYY-MM-DD.md`)                 |
-| `_templates/daily.md` | daily template, including the carry-over script   |
-| `docs/`              | optional setup guides (removed on eject)           |
-| `.obsidian/`         | vault + plugin config (workspace state is ignored) |
-| `eject.sh`           | one-time script to turn the template into a vault  |
+| Path                  | Purpose                                            |
+| --------------------- | -------------------------------------------------- |
+| `logs/`               | one note per day (`YYYY-MM-DD.md`)                 |
+| `_templates/daily.md` | daily template, including the carry-over script    |
+| `docs/`               | optional setup guides (removed on eject)           |
+| `.obsidian/`          | vault + plugin config (workspace state is ignored) |
+| `eject.sh`            | one-time script to turn the template into a vault  |
